@@ -1,4 +1,4 @@
-package StudentController;
+package Controller;
 @RestController
 @RequestMapping("api/v1/student")
 @RequiredArgsConstructor
