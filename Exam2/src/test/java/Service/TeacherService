@@ -1,4 +1,4 @@
-package TeacherService;
+package Service;
 import com.example.test1.Model.Student;
 import com.example.test1.Model.Teacher;
 import org.springframework.stereotype.Service;
