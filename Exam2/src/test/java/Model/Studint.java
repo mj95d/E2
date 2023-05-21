@@ -6,15 +6,19 @@ import lombok.Data;
 
 @AllArgsConstructor
 @Data
-public class Studint {
+public class Student {
 
-    @NotEmpty
+    @NotEmpty(message = "id is empty")
     private String id;
-    @NotEmpty
 
+    @NotEmpty(message = "name is empty")
     private String name;
-@NotEmpty
-    private int age;
-@NotEmpty
-    private int major;
+
+    @NotEmpty(message = "age is empty")
+    @Min(value = 10, message = "age must greater than 10")
+    @Max(value = 20, message = "Age must be less than 20")
+    private String age;
+
+    @NotEmpty(message = "major is empty")
+    private String major;
 }
